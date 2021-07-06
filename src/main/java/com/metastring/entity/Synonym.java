@@ -23,7 +23,8 @@ public class Synonym extends PanacheEntity {
     private String language;
     @Column(name = "element_id")
     private Long elementId;
-    //private  element_table
+    @Column(name = "element_type")
+    private String elementType;
     private String description;
     @OneToOne
     @JoinColumn(name = "reference_id", referencedColumnName = "id")
