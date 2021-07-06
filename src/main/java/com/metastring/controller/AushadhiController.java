@@ -1,8 +1,7 @@
 package com.metastring.controller;
 
-import com.metastring.Repository.AushadhiRepository;
+import com.metastring.repository.AushadhiRepository;
 
-import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

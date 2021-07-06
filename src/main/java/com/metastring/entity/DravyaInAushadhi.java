@@ -1,4 +1,4 @@
-package com.metastring.Entity;
+package com.metastring.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import lombok.AllArgsConstructor;
@@ -13,17 +13,16 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ingredient")
-public class Ingredient extends PanacheEntity {
+@Table(name = "dravya_in_aushadhi")
+public class DravyaInAushadhi extends PanacheEntity {
 
-    @Column(name = "ingredient_type")
-    private String ingredientType; //animal or Mineral or Other
-
-    private String description;
-
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "aushadhi_id", referencedColumnName = "id")
     private Aushadhi aushadhiId;
+
+    @OneToOne
+    @JoinColumn(name = "plant_part_id", referencedColumnName = "id")
+    private PlantPart plantPartId;
 
 
 }

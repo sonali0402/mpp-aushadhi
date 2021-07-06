@@ -1,6 +1,6 @@
-package com.metastring.Repository;
+package com.metastring.repository;
 
-import com.metastring.Entity.Aushadhi;
+import com.metastring.entity.Aushadhi;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 import javax.enterprise.context.ApplicationScoped;

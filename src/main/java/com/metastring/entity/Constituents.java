@@ -1,4 +1,4 @@
-package com.metastring.Entity;
+package com.metastring.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import lombok.AllArgsConstructor;
